@@ -12,7 +12,7 @@ export const FeedbackProvider = ({ children }) => {
     // Delete Feeback Function
     const deleteFeedback = async (id) => {
         if (window.confirm("Are you sure you want to delete this?")) {
-            await fetch(proxy+"/feedback/"+id,{method:'DELETE'})
+            await fetch(`/feedback/${id}`,{method:'DELETE'})
             setFeedback(feedback.filter(item => item.id !== id))
         }
     }
