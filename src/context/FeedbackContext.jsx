@@ -2,7 +2,6 @@ import { createContext, useEffect, useState } from 'react'
 const FeedbackContext = createContext()
 
 export const FeedbackProvider = ({ children }) => {
-    const proxy = "https://5500-vaib215-feedbackapp-aigkla28xpe.ws-us43.gitpod.io"
     const [isLoading, setIsLoading] = useState(true)
     const [feedback, setFeedback] = useState([])
     // Set item to be updated
@@ -19,7 +18,7 @@ export const FeedbackProvider = ({ children }) => {
     }
     // Add Feedback Function
     const addFeedback = async (newFeedback) => {
-        const response = await fetch(proxy+"/feedback",{
+        const response = await fetch(`/feedback`,{
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -38,7 +37,7 @@ export const FeedbackProvider = ({ children }) => {
         })
     }
     const updateFeedback = async (id,updItem) => {
-        const response = await fetch(proxy+"/feedback/"+id,{
+        const response = await fetch(`/feedback/${id}`,{
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -53,7 +52,7 @@ export const FeedbackProvider = ({ children }) => {
     }, [])
     
     const fetchFeedback = async () => {
-        const response = await fetch(proxy+"/feedback?_sort=id&_order=desc")
+        const response = await fetch(`/feedback?_sort=id&_order=desc`)
         const data = await response.json()
         setFeedback(data)
         setIsLoading(false)
