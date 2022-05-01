@@ -2,17 +2,17 @@ const FeedbackData = [
     {
       id: 1,
       rating: 10,
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. consequuntur vel vitae commodi alias voluptatem est voluptatum ipsa quae.',
+      text: 'Really awesome project. Keep it up.',
     },
     {
       id: 2,
       rating: 9,
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. consequuntur vel vitae commodi alias voluptatem est voluptatum ipsa quae.',
+      text: 'The UI is very amazing man, kudos.',
     },
     {
       id: 3,
       rating: 8,
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. consequuntur vel vitae commodi alias voluptatem est voluptatum ipsa quae.',
+      text: 'Colour scheme can be improved. Btw nice project.',
     },
   ]
   
