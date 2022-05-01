@@ -3,12 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:5500",
+  "homepage": "https://vaib215.github.io/feedback-app",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
     "concurrently": "^7.1.0",
+    "express": "^4.18.1",
     "framer-motion": "^4.1.17",
+    "gh-pages": "^3.2.3",
+    "json-server": "^0.17.0",
+    "path": "^0.12.7",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-icons": "^4.3.1",
@@ -20,9 +25,11 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "json-server --watch db.json --port 5500",
+    "server": "json-server --watch db.json --port=3301",
     "dev": "concurrently \"npm run build\" \"npm run server\" "
   },
   "eslintConfig": {
