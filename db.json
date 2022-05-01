@@ -1,0 +1,19 @@
+{
+  "feedback": [
+    {
+      "id": 1,
+      "rating": 10,
+      "text": "Really awesome project. Keep it up."
+    },
+    {
+      "text": "Maja aa gaya bhai",
+      "rating": 10,
+      "id": 2
+    },
+    {
+      "id": 3,
+      "rating": 8,
+      "text": "Colour scheme can be improved. Btw nice project."
+    }
+  ]
+}
