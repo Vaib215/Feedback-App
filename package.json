@@ -2,7 +2,7 @@
   "name": "feedback-app",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:5500",
+  "proxy": "https://vaib215.github.io/feedback-app",
   "homepage": "https://vaib215.github.io/feedback-app",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
