@@ -7,13 +7,18 @@
     },
     {
       "text": "Maja aa gaya bhai",
-      "rating": 10,
+      "rating": 9,
       "id": 2
     },
     {
-      "id": 3,
-      "rating": 8,
-      "text": "Colour scheme can be improved. Btw nice project."
+      "text": "Colour scheme can be improved. Btw nice project.",
+      "rating": 10,
+      "id": 3
+    },
+    {
+      "text": "This is just awesome",
+      "rating": 10,
+      "id": 4
     }
   ]
 }
